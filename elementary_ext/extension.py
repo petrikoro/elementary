@@ -33,7 +33,7 @@ class elementary(ExtensionBase):
             os.getenv("ELEMENTARY_PROFILES_DIR", self.dbt_project_dir / "profiles")
         )
         self.config_dir_path = os.getenv("ELEMENTARY_CONFIG_DIR_PATH", None)
-        self.dbt_ext_type = os.getenv("DBT_EXT_TYPE", "postgres")
+        self.dbt_ext_type = os.getenv("DBT_EXT_TYPE", "bigquery")
         self.file_path = Path(os.getenv("ELEMENTARY_FILE_PATH", "utilities/elementary/report.html"))
 
         self.slack_channel_name = os.getenv("ELEMENTARY_SLACK_CHANNEL_NAME", "")
